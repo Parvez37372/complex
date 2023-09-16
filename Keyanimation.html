@@ -1,0 +1,37 @@
+
+<h1>two color animation </h1>
+<!DOCTYPE>
+<html>
+<head>
+<style>
+div{
+
+width:100px;
+height:100px;
+background-color:red;
+-webkit-animatioin-name:example;/*safari4.0-8.0*/
+-webkit-animatioin-duration:4s;/*safari4.0-8.0*/
+animation-name:example;
+animation-duration:10s;
+}
+/*safari4.0-8.0*/
+@-webkit-keyframes example
+{
+from{background-color:red;}
+to{background-color:yellow;}
+}
+/*Standard syntax*/
+@-keyframes example{
+from{background-color:red;}
+to{background-color:green;}
+
+}
+
+</style>
+</head>
+<body>
+<p><b>Note:</b>this example does not work in internet explorer9 and earlier versions.</p>
+<div>hello</div>
+<p><b>Note:</b>when an animation is finished,it changes back to its original style.</p>
+</body>
+</html>

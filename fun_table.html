@@ -1,0 +1,19 @@
+<html>
+<script language="JavaScript">
+function table(n,i)
+{
+var tab;
+tab=i*n;
+for(i=1;i<=10;i++)
+{
+document.write("<br>table of given n."+tab);
+
+}
+}
+
+</script>
+<form name=f1>
+enter the no<input type=text name=t1 size=30>
+<input type=button name=b1 value=ok onclick="table(eval(f1.t1.value));">
+</form>
+</html>

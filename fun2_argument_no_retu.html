@@ -1,0 +1,19 @@
+<html>
+<script language="JavaScript">
+function mysum(x,y)
+{
+ var z;
+ z=x+y;
+document.write("<br> Frist no."+x);
+document.write("<br> Second no."+y);
+document.write("<br> Addition of no."+z);
+f1.t3.value=z;
+}
+</script>
+<form name=f1>
+Enter First no.<input type="text" name=t1 size=30><br>
+Enter Second no.<input type="text" name=t2 size=30><br>
+Addition no.<input type="text" name=t3 size=30><br>
+<input type=button name=b1 value=ok onclick="mysum(eval(f1.t1.value),eval(f1.t2.value));">
+</form>
+</html>

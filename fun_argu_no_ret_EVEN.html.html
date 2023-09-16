@@ -1,0 +1,23 @@
+<html>
+<script language="JavaScript">
+function even_odd(n)
+{
+if(n%2==0)
+{
+//document.write("<br>even no"+ n);
+f1.t2.value="Even";
+}
+else
+{
+//document.write("<br>odd no."+n);
+f1.t2.value="Odd";
+}
+f1.t2.value;
+}
+</script>
+<form name=f1>
+enter the any num<input type=text name=t1 size=20><br>
+Number is <input type=text name=t2 size=20><br>
+<input type=button name=b1 value=check onclick="even_odd(eval(f1.t1.value));">
+</form>
+</html>

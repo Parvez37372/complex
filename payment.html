@@ -1,0 +1,69 @@
+<html>
+<body background="pay3.jpg">
+<form name=f1>
+<h1>P37 complex</h1>
+<table border=9 bgcolor=pink>
+<tr>
+<td>
+<input type=checkbox name=c1><a href="clothes.html">clothes</a><br>
+<input type=checkbox name=c2>shoses<br>
+<input type=checkbox name=c3>Elctornic items<br>
+payment mode<br>
+<input type=radio name=res checked >cash on delivery<br>
+<input type=radio name=res >Card &nbsp Sbi(10% discount)<br>
+Order amount<input type=textbox name=t1 size=20><br>
+<input type=button name=b1 value= pyment onclick="rest();">
+</table>
+</form>
+<script language="JavaScript">
+function rest()
+{
+var s=5,p=199,cd=25,amt;
+if(f1.c1.checked==true && f1.c2.checked==false && f1.c3.checked==false)
+{
+amt=s;
+}
+else if(f1.c1.checked==false && f1.c2.checked==true && f1.c3.checked==false)
+{
+amt=p;
+}
+else if(f1.c1.checked==false && f1.c2.checked==false && f1.c3.checked==true)
+{
+amt=cd;
+}
+else if(f1.c1.checked==true && f1.c2.checked==true && f1.c3.checked==false)
+{
+amt=s+p;
+}
+else if(f1.c1.checked==true && f1.c2.checked==false  && f1.c3.checked==true)
+{
+amt=s+cd;
+}
+else if(f1.c1.checked==false && f1.c2.checked==true && f1.c3.checked==true )
+{
+amt=p+cd;
+}
+else if(f1.c1.checked==true && f1.c2.checked==true && f1.c3.checked==true)
+{
+amt=s+p+cd;
+}
+else
+{
+amt=0;
+}
+var d;
+if(f1.res[0].checked==true)
+{
+d=0;
+}
+else if(f1.res[1].checked==true)
+{
+d=amt*10/100;
+}
+var ord;
+ord=amt-d;
+f1.t1.value=ord;
+}
+</script>
+</body>
+</html>

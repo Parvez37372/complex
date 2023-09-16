@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropdown 
+{
+position:relative;
+display:inline-block;
+}
+.dropdown-content
+{
+display:none;
+position:absolute;
+background-color:#f9f9f9;
+min-width:160px;
+box-shadow:32px 16px 8px 4px cyan;
+padding:12px 16px;
+z-index:1;
+}
+.dropdown:hover .dropdown-content
+{
+display:block;
+}
+</style>
+<body>
+<h2>Hoverable Dropdown</h2>
+<p>move the over the text below to open the dropdown content.</p>
+<div class="dropdown">
+<span><b>Mouse over me movies</b>&#9660;</span>
+<div class="dropdown-content">
+<p>login</p>
+<p>Ladied</p>
+<p>Men</p>
+<p>Winter</p>
+</div>
+</div>
+</body>
+</html>

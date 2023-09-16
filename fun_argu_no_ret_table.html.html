@@ -1,0 +1,17 @@
+<html>
+<script language="JavaScript">
+function table(n)
+{
+var i, tab;
+for(i=1;i<=10;i++)
+{
+tab=n*i;
+document.write("<br>"+tab);
+}
+}
+</script>
+<form name=f1>
+enter the any number<input type=text name=t1 size=20><br>
+<input type=button name=b1 value=calculate onclick="table(eval(f1.t1.value));"> 
+</form>
+</html>

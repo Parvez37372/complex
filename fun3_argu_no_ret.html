@@ -1,0 +1,19 @@
+<html>
+<script language="JavaScript">
+function area(l,w)
+{
+var ar;
+ar=l*w;
+//document.write("<br> enter the value of length."+l);
+//document.write("<br> enter the value of width."+w);
+//document.write("<br> area of  rect."+ar);
+f1.t3.value=ar;
+}
+</script>
+<form name=f1>
+Enter the  value length<input type="text" name=t1 size=20><br>
+Enter the value width<input type="text" name=t2 size=20><br>
+area of rectangle<input type="text" name=t3 size=20><br>
+<input type=button name=b1 value=calculate onclick="area(eval(f1.t1.value),eval(f1.t2.value));">
+</form>
+</html>
